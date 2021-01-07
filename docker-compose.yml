@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    container_name: wheather-twitter-db 
+    image: postgres:13
+    environment: 
+      - POSTGRES_PASSWORD=postgres
+    ports: 
+      - "5432:5432"
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+
+  app:
+    container_name: wheather-twitter-api
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PGHOST=db
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
