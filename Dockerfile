@@ -13,6 +13,7 @@ COPY Gemfile.lock /app/Gemfile.lock
 COPY . /app
 
 # install dependencies
+RUN bundle update --bundler
 RUN bundle install
 
 # add a script to be executed every time the container starts.
