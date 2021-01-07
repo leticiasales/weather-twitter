@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| "git://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
@@ -24,6 +24,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+
+# REST calls to OpenWeather API
+gem 'open_weather', :github => 'leticiasales/open-weather-gem', :branch => 'main'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
