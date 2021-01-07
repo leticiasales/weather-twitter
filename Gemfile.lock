@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/leticiasales/open-weather-gem.git
+  revision: 616cbda9ac4e9ee7e91f185fac2abf528c7ae0a3
+  branch: main
+  specs:
+    open_weather (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,16 +67,36 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     bootsnap (1.5.1)
       msgpack (~> 1.0)
+    buftok (0.2.0)
     builder (3.2.4)
     byebug (11.1.3)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    equalizer (0.0.11)
     erubi (1.10.0)
     ffi (1.14.2)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    http (4.4.1)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    http-parser (1.2.2)
+      ffi-compiler
+    http_parser.rb (0.6.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     listen (3.4.0)
@@ -82,16 +109,21 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.3)
     msgpack (1.3.3)
+    multipart-post (2.1.1)
+    naught (1.1.0)
     nio4r (2.5.4)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    public_suffix (4.0.6)
     puma (5.1.1)
       nio4r (~> 2.0)
     racc (1.5.2)
@@ -128,6 +160,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    simple_oauth (0.3.1)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -138,8 +171,23 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
     thor (1.0.1)
+    thread_safe (0.3.6)
+    twitter (7.0.0)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      equalizer (~> 0.0.11)
+      http (~> 4.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+      memoizable (~> 0.4.0)
+      multipart-post (~> 2.0)
+      naught (~> 1.0)
+      simple_oauth (~> 0.3.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -152,14 +200,16 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   listen (~> 3.3)
+  open_weather!
   puma (~> 5.0)
   rails (~> 6.1.0)
   spring
   sqlite3 (~> 1.4)
+  twitter
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.7.2
 
 BUNDLED WITH
    1.17.2
