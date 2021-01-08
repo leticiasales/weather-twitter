@@ -20,6 +20,7 @@ services:
       - PGHOST=db
       - PGUSER=postgres
       - PGPASSWORD=postgres
+      - OPEN_WEATHER_API_KEY=02afd06cd333421bd19a8381a28a5d26
     ports:
       - "3000:3000"
     depends_on:
