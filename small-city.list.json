@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1690684,
+    "name": "Salvador",
+    "state": "",
+    "country": "PH",
+    "coord": {
+      "lon": 123.843613,
+      "lat": 7.89528
+    }
+  },
+  {
+    "id": 1705545,
+    "name": "Los Angeles",
+    "state": "",
+    "country": "PH",
+    "coord": {
+      "lon": 125.608063,
+      "lat": 9.0125
+    }
+  },
+  {
+    "id": 2263598,
+    "name": "Salvador",
+    "state": "",
+    "country": "PT",
+    "coord": {
+      "lon": -8.40506,
+      "lat": 39.211182
+    }
+  },
+  {
+    "id": 3448433,
+    "name": "São Paulo",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -49.0,
+      "lat": -22.0
+    }
+  },
+  {
+    "id": 3448439,
+    "name": "São Paulo",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -46.636108,
+      "lat": -23.547501
+    }
+  },
+  {
+    "id": 3450554,
+    "name": "Salvador",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -38.51083,
+      "lat": -12.97111
+    }
+  },
+  {
+    "id": 3464975,
+    "name": "Curitiba",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -49.27306,
+      "lat": -25.42778
+    }
+  },
+  {
+    "id": 3606250,
+    "name": "Las Vegas",
+    "state": "",
+    "country": "HN",
+    "coord": {
+      "lon": -87.449997,
+      "lat": 15.01667
+    }
+  },
+  {
+    "id": 3635260,
+    "name": "Las Vegas",
+    "state": "",
+    "country": "VE",
+    "coord": {
+      "lon": -68.629601,
+      "lat": 9.53727
+    }
+  },
+  {
+    "id": 5128638,
+    "name": "New York",
+    "state": "NY",
+    "country": "US",
+    "coord": {
+      "lon": -75.499901,
+      "lat": 43.000351
+    }
+  },
+  {
+    "id": 5368361,
+    "name": "Los Angeles",
+    "state": "CA",
+    "country": "US",
+    "coord": {
+      "lon": -118.243683,
+      "lat": 34.052231
+    }
+  },
+  {
+    "id": 5475433,
+    "name": "Las Vegas",
+    "state": "NM",
+    "country": "US",
+    "coord": {
+      "lon": -105.2239,
+      "lat": 35.593929
+    }
+  },
+  {
+    "id": 5506956,
+    "name": "Las Vegas",
+    "state": "NV",
+    "country": "US",
+    "coord": {
+      "lon": -115.137222,
+      "lat": 36.174969
+    }
+  },
+  {
+    "id": 6321026,
+    "name": "Salvador",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -38.50811,
+      "lat": -12.97177
+    }
+  },
+  {
+    "id": 6322752,
+    "name": "Curitiba",
+    "state": "",
+    "country": "BR",
+    "coord": {
+      "lon": -49.290821,
+      "lat": -25.50395
+    }
+  }
+]

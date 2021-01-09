@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: "Run tests"
     runs-on: ubuntu-latest
 
     services:
@@ -33,6 +34,7 @@ jobs:
         PGHOST: localhost
         PGUSER: postgres
         RAILS_ENV: test
+        SEED_FILE: city.list.json
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
