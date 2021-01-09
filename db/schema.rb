@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(version: 2021_01_07_205301) do
 
   create_table "cities", force: :cascade do |t|
     t.text "name"
+    t.text "state"
+    t.text "country"
     t.integer "external_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
