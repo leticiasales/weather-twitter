@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/leticiasales/open-weather-gem.git
-  revision: 30fb5ee6caf8a24d207e55610b748c1108febbdb
+  revision: 42f3b3bfab28eee323bbc3ee3a2aa460d99f94c1
   branch: main
   specs:
     open_weather (1.0.0)
@@ -94,8 +94,8 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    http-parser (1.2.2)
-      ffi-compiler
+    http-parser (1.2.3)
+      ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
@@ -209,7 +209,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.7.2
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4

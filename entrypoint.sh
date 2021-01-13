@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Check and install missing gems
+bundle check || bundle
+
 # Remove a potentially pre-existing server.pid for Rails.
 rm -f /app/tmp/pids/server.pid
 
