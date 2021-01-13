@@ -51,7 +51,7 @@ class CitiesController < ApplicationController
 
     def weather_message(weather)
       date = I18n.l Date.today, :format => :short
-      temp = format('%.1f', convert_kelvin_celsius(weather[:temp])).gsub(".", ",")
+      temp = format('%.1f', convert_kelvin_celsius(weather[:temp]))
 
       temp + "ºC em " + weather[:city] + " em " + date + '.'
     end
@@ -65,7 +65,7 @@ class CitiesController < ApplicationController
           |arr| 
             temps = arr[1].map { |f| f[:temp] }
             mean = temps.reduce(:+).to_f / temps.size
-            temp = format('%.1f', convert_kelvin_celsius(mean)).gsub(".", ",") + "ºC"
+            temp = format('%.0f', convert_kelvin_celsius(mean)) + "ºC"
 
             temp + " em " + (I18n.l arr[0], :format => :short)
         }
@@ -76,5 +76,4 @@ class CitiesController < ApplicationController
     def convert_kelvin_celsius(k)
       k - 273.15
     end
-
 end
