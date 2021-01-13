@@ -34,7 +34,7 @@ class CitiesControllerTest < ActionDispatch::IntegrationTest
     forecast = JSON.parse(@response.body)
 
     assert_equal "{}", forecast.to_s
-    assert_response 200
+    assert_response 404
   end
 
   test "getting forecast for non-existent city" do
@@ -43,6 +43,6 @@ class CitiesControllerTest < ActionDispatch::IntegrationTest
     forecast = JSON.parse(@response.body)
 
     assert_equal "{}", forecast.to_s
-    assert_response 200
+    assert_response 404
   end
 end

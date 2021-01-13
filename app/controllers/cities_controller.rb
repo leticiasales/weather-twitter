@@ -19,7 +19,7 @@ class CitiesController < ApplicationController
       tweet_content = weather_message(weather) + forecast_message(forecast)
 
       render json: { tweet: tweet_content, city: @city.name, forecast: forecast }
-    elsif @cities.count
+    elsif @cities.count > 0
       render json: { message: "There's more than one city with that name. Please specify city state or country.", cities: @cities.map{ |city| city.slice(:name, :state, :country) } }
     else
       render json: {}, status: :not_found
