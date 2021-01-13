@@ -34,7 +34,7 @@ jobs:
         PGHOST: localhost
         PGUSER: postgres
         RAILS_ENV: test
-        SEED_FILE: city.list.json
+        SEED_FILE: small-city.list.json
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
