@@ -1,7 +1,24 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyText
+curitiba:
+  name: Curitiba
+  country: BR
+  external_id: 6322752
 
-two:
-  name: MyText
+newyork:
+  name: New York
+  state: NY
+  country: US
+  external_id: 5128581
+
+lasvegasNV:
+  name: Las Vegas
+  state: NV
+  country: US
+  external_id: 5506956
+
+lasvegasNM:
+  name: Las Vegas
+  state: NM
+  country: US
+  external_id: 5475433
