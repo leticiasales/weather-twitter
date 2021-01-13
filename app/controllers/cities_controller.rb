@@ -18,6 +18,8 @@ class CitiesController < ApplicationController
       weather = request.get(@city.external_id)
       tweet_content = weather_message(weather) + forecast_message(forecast)
 
+      tweet = TwitterService.new.update(tweet_content)
+
       render json: { tweet: tweet_content, city: @city.name, forecast: forecast }
     elsif @cities.count > 0
       render json: { message: "There's more than one city with that name. Please specify city state or country.", cities: @cities.map{ |city| city.slice(:name, :state, :country) } }
