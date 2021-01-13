@@ -1,0 +1,9 @@
+pt_br:
+  date:
+    formats:
+      short: '%d/%m'
+      default: '%d/%m/%Y'
+  support:
+    array: 
+      words_connector: ", "
+      last_word_connector: " e "
