@@ -2,7 +2,7 @@ require "test_helper"
 
 class CitiesControllerTest < ActionDispatch::IntegrationTest
   test "tweet city weather and forecast" do
-    city = cities(:curitiba)
+    city = cities(:newyork)
 
     post forecast_url({ city: city.name })
 
